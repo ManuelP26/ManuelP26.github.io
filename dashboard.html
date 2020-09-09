@@ -1,9 +1,336 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+  <nav>
+    <ul class="ule">
+        <div> <li class="lie">  <a href="index.html" >Hoofdpagina</a> </div>  </li>
+        <div> <li class="lie">  <a href="profielpagina.html" >ProfielPagina</a> </div> </li>
+        <div> <li class="lie">  <a href="dashboard.html" >Dashboard</a> </div> </li>
+        <div> <li class="lie">  <a href="faq.html" >FAQ</a> </div>  </li>
+        
+    </ul>
+</nav>
+
     <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Dashboard</title>
+    <link rel="shortcut icon" href="data:image/png;base64,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">
+    <!--mstheme--><link rel="stylesheet" href="bati1011.css">
+    <meta name="Microsoft Theme" content="batikk 1011">
     <h1>Personal Dashboard</h1>
     
     </head>
+
+    <style>
+
+.ule {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.ule {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.lie {
+  float: left;
+}
+
+.lie a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.lie a:hover {
+  background-color: #111;
+}
+      body {
+        font-family: Verdana;
+        margin: auto;
+        text-align:center;
+        color: black;
+        background-attachment: fixed;
+        background-image: url('https://storage.pixteller.com/designs/designs-images/2019-03-27/05/simple-background-backgrounds-passion-simple-1-5c9b95d09002a.png');
+      }
+      .breedte {
+        width: 20px;
+      }
+      </style> 
+
+    <body>
+
+      <p>De toetsen die ik nog moet voltooien en/of zijn al voltooid kan je hier zien. samen met de toetscode en het aantal SP/EC.</p>
+
+        <table style="width:100%">
+                                        <!-- Moet nog veranderd worden met goede borders!!-->
+            <tr>
+              <th>Toets Naam/Referentie Naam</th>
+              <th>Voltooid/Gehaald/Cijfer</th>
+              <th>SP/EC</th>
+              <th>Toetscode</th>
+            </tr>
+            <tr>
+              <td>Opleidings en Beroepsorientatie</td>
+              <td class="koek"><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Voltooid</label>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Gehaald</label>
+                <label for="fname">Cijfer:</label>
+                <input type="text" id="fname" name="fname" class="breedte"><br><br> </td>
+              <td>2,5</td>
+              <td>CU75001</td>
+            </tr>
+            <tr>
+              <td>Computer Science Basics</td>
+              <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Voltooid</label>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Gehaald</label>
+                <label for="fname">Cijfer:</label>
+                <input type="text" id="fname" name="fname" class="breedte" ><br><br> </td>
+              <td>7,5</td>
+              <td>CU75002</td>
+            </tr>
+            <tr>
+              <td>Programming Basics</td>
+              <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Voltooid</label>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Gehaald</label>
+                <label for="fname">Cijfer:</label>
+                <input type="text" id="fname" name="fname" class="breedte" ><br><br> </td>
+              <td>5</td>
+              <td>CU75002</td>
+            </tr>
+            <tr>
+              <td>Professionals Skills 1</td>
+              <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Voltooid</label>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Gehaald</label> 
+                <label for="fname">Cijfer:</label>
+                <input type="text" id="fname" name="fname" class="breedte" ><br><br> </td>
+              <td>2,5</td>
+              <td>CU750015</td>
+            </tr>
+            <tr>
+              <td>HZ Personality 1</td>
+              <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Voltooid</label>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Gehaald</label> 
+                <label for="fname">Cijfer:</label>
+                <input type="text" id="fname" name="fname" class="breedte" ><br><br> </td>
+              <td>2,5</td>
+              <td>CU20096</td>
+            </tr>
+            <tr>
+              <td>Object oriented Programming</td>
+              <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Voltooid</label>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Gehaald</label> 
+                <label for="fname">Cijfer:</label>
+                <input type="text" id="fname" name="fname" class="breedte" ><br><br> </td>
+              <td>10</td>
+              <td>CU75004</td>
+            </tr>
+            <tr>
+              <td>Professionals Skills 2</td>
+              <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Voltooid</label>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Gehaald</label> 
+                <label for="fname">Cijfer:</label>
+                <input type="text" id="fname" name="fname" class="breedte" ><br><br> </td>
+              <td>2,5</td>
+              <td>CU75006</td>
+            </tr>
+            <tr>
+              <td>Professionele Werkplek</td>
+              <td class=""><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Voltooid</label>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Gehaald</label> 
+                <label for="fname">Cijfer:</label>
+                <input type="text" id="fname" name="fname" class="breedte" ><br><br> </td>
+              <td>2,5</td>
+              <td>CU75007</td>
+            </tr>
+            <tr>
+              <td>Framework Development 1</td>
+              <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Voltooid</label>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Gehaald</label> 
+                <label for="fname">Cijfer:</label>
+                <input type="text" id="fname" name="fname" class="breedte" ><br><br> </td>
+              <td>5</td>
+              <td>CU75008</td>
+            </tr>
+            <tr>
+              <td>Framework Project 1</td>
+              <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Voltooid</label>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Gehaald</label> 
+                <label for="fname">Cijfer:</label>
+                <input type="text" id="fname" name="fname" class="breedte" ><br><br> </td>
+              <td>5</td>
+              <td>CU75009</td>
+            </tr>
+            <tr>
+              <td>Professionals Skills 3</td>
+              <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Voltooid</label>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Gehaald</label> 
+                <label for="fname">Cijfer:</label>
+                <input type="text" id="fname" name="fname" class="breedte" ><br><br> </td>
+              <td>2,5</td>
+              <td>CU750010</td>
+            </tr>
+            <tr>
+              <td>IT Personality 1</td>
+              <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Voltooid</label>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Gehaald</label> 
+                <label for="fname">Cijfer:</label>
+                <input type="text" id="fname" name="fname" class="breedte" ><br><br> </td>
+              <td>2,5</td>
+              <td>CU22128</td>
+            </tr>
+            <tr>
+              <td>Framework Development 2</td>
+              <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Voltooid</label>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Gehaald</label> 
+                <label for="fname">Cijfer:</label>
+                <input type="text" id="fname" name="fname" class="breedte" ><br><br> </td>
+              <td>5</td>
+              <td>CU75012</td>
+            </tr>
+            <tr>
+              <td>Framework Project 2</td>
+              <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Voltooid</label>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Gehaald</label> 
+                <label for="fname">Cijfer:</label>
+                <input type="text" id="fname" name="fname" class="breedte" ><br><br> </td>
+              <td>5</td>
+              <td>CU75011</td>
+            </tr>
+
+            <style>
+             tr:nth-child(n+2) {
+                        color: white;
+                        background-color: grey;
+                        
+             }
+
+             tr:nth-child(n+5) {
+                        background-color: black;
+             }
+
+             tr:nth-child(n+8) {
+                        background-color: grey;
+             }
+            
+             tr:nth-child(n+12) {
+                        background-color: black;
+             }
+
+            tr td {
+                border: 3px solid black;
+                border-collapse: collapse;
+            }
+            
+            .koek {
+              width: 500px;
+            }
+            
+            </style>
+            
+          </table> 
+
+          
+          <style>
+          .progress {
+            width: 600px;
+        }
+        .progress header span {
+            color: black;
+            float: right;
+        }
+        .progress .bar {
+            position: relative;
+            background-color: grey;
+        }
+        .progress .bar .percent {
+            color: white;
+            background-color: red;
+            width: 0%;
+        }
+        .progress .bar .percent .text {
+          color: white;
+          position: absolute;
+          left: 1%;
+        }
+        .progress .bar .ref {
+            position: absolute;
+            left: 75%;
+            top: 0;
+            width: 1px;
+            height: 100%;
+            background-color: black;
+        }
+        .progress .bar .ref:before {
+            content: attr(data-ref);
+            position: absolute;
+            width: 100px;
+            left: -50px;
+            top: 100%;
+            color: black;
+            text-align: center;
+            
+        }
+        .tk-color {
+            margin: left;
+            width: 250px;
+            background-color: grey ;
+            
+            
+        }
+      </style>
+        
+        <div class="progress">
+            <header><b>Totale SP/EC behaald.</b><span>60 Totaal</span></header>
+            <div class="bar">
+                <div class="percent text">0</div>
+                <div class="ref" data-ref="NBSA = 45"></div>
+            </div>
+        </div>
+
+        <p class="tk-color">Studie Gids</p>
+        <ul class="tk-color">
+          <li> <a href="https://hz.nl/over-de-hz/regelingen-documenten-1/onderwijs-en-examenregelingen" target="blank"> Onderwijs en Examenregelingen</a> </li>
+          <li> <a href="https://learn.hz.nl/my/" target="blank"> Learn Omgeving</a> </li>
+          <li> <a href="https://hz.nl/over-de-hz/regelingen-documenten-1/algemene-voorwaarden-geheimhoudingsovereenkomsten" target="blank"> Algemene Voorwaarden</a> </li>
+          <li> <a href="https://apps.hz.nl/angular/studievoortgang/studiestatus" target="blank"> Studievoortgang</a> </li>
+          <li> <a href="https://hz.nl/secure/services/hz-sport/teams" target="blank"> Teams Omgeving</a> </li>
+          <li> <a href="https://hz.nl/secure/mediatheek/mediatheekdiensten" target="blank"> Mediatheek Diensten</a> </li>
+        </ul>
+    </body>
 
 
 
