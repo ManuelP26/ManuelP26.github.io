@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8" />
+
+    <nav>
+        <ul class="ule">
+            <div> <li class="lie">  <a href="index.html" >Hoofdpagina</a> </div>  </li>
+            <div> <li class="lie">  <a href="profielpagina.html" >ProfielPagina</a> </div> </li>
+            <div> <li class="lie">  <a href="dashboard.html" >Dashboard</a> </div> </li>
+            <div> <li class="lie">  <a href="faq.html" >FAQ</a> </div>  </li>
+            <div> <li class="lie">  <a href="motivatie.html" >Motivatie</a> </div>  </li>
+            <div> <li class="lie">  <a href="beroepsbeeld.html" >Beroepsbeeld</a> </div>  </li>
+        </ul>
+    </nav>
+    
+        <head>
+          <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>Beroepsbeeld</title>
+        <link rel="shortcut icon" href="data:image/png;base64,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">
+        <!--mstheme--><link rel="stylesheet" href="bati1011.css">
+        <meta name="Microsoft Theme" content="batikk 1011">
+        <h1>Mijn Beroepsbeeld</h1>
+        
+        </head>
+    
+        <style>
+
+    .fonts {
+        margin: auto;
+        width: 800px;
+    }
+
+    .idk {
+      background-color: black;
+      color: black;
+    }
+    
+    .ule {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .ule {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    .lie {
+      float: left;
+    }
+    
+    .lie a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .lie a:hover {
+      background-color: #111;
+    }
+          body {
+            font-family: Verdana;
+            margin: auto;
+            text-align:center;
+            color: black;
+            background-attachment: fixed;
+            background-image: url('https://storage.pixteller.com/designs/designs-images/2019-03-27/05/simple-background-backgrounds-passion-simple-1-5c9b95d09002a.png');
+          }
+          .breedte {
+            width: 20px;
+          }
+          </style> 
+
+    <body>
+      <img src="https://site-assets-yoursurprisecom.netdna-ssl.com/images/template/logo-ysp-mobile.png" alt="YourSurprise">
+      <div class="fonts">
+      <p> 
+        Is een bedrijf met enthousiaste medewerkers die met passie cadeaus maken en geven. 
+        In 2005 zijn ze voor het eerst opgestart met hun website, en zijn hard op weg om wereldwijd te gaan. 
+        Zowel particulier als zakelijk, yoursurpise is altijd in beweging. Ze willen elke keer de verwachting van de klant overtreffen.
+        Hun website ziet er goed en georganiseerd uit, 
+        je kan overal makkelijk bij. Op de over ons pagina staat ook leuke feitjes wat ze de afgelopen jaren allemaal hebben bereikt. 
+        Met uiteraard een leuke groepsfoto van alle medewerkers.
+      </p>
+      <p>
+        Tussen het kopje vacatures vind je de IT beroepen.
+        zoals een:
+        <ul>
+          <li> javascript developer – squad personalisatie </li>
+          <li> PHP develope – squad website en marketing </li>
+          <li> PHP developer – squad interne automatisering </li>
+        </ul>
+      </p>
+        <p>
+        Als Javascript developer ontwikkel je software voor misschien wel de belangrijkste applicaties: onze online personalisatie software, 
+        ook wel de ‘editor’ genoemd.
+      </p>
+      <p>
+        PHP developer - squad Website en Marketing.
+        Als je het tof vindt om te sleutelen aan een website die op een drukke dag door honderdduizenden bezoekers uit heel Europa wordt bezocht, 
+        dan is dit je plek.
+      </p>
+      <p>
+        PHP Developer - squad Interne Automatisering.
+        Als ervaren PHP-er neem je het voortouw bij het bedenken en implementeren van oplossingen voor complexe 
+        IT-vraagstukken op het gebied van interne automatisering.        
+      </p>
+    </div>
+
+      <div class="idk">.</div>
+
+    <img src="data:image/jpeg;base64,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" alt="google">
+    <div class="fonts">
+    <p>
+        Het is de missie van google om alle informatie ter wereld te organiseren en universeel toegankelijk te maken, maar tegelijkertijd ook bruikbaar.
+        De toewijding van google is het leven van de mens te verbeteren, dat geldt zozeer vandaag nog en toen ze begonnen.
+        Ze vinden het mooi om te zien wat de technologie van nu met de wereld doet en wat de wereld ermee doet.
+        De over ons site van google staat vol met weetjes over wat ze allemaal willen bereiken. Met leuke plaatjes en niet al te basic.
+        Het enige wat je niet ziet zijn de medewerkers, maar dat kan ik begrijpen omdat het natuurlijk een gigantische organisatie is.        
+    </p>
+    <p>
+      Je hebt verschillende beroep rollen bij google.
+    </p>
+    <p>
+      Ik bespreek er hier 5 dat zijn:
+    </p>
+    <ul>
+     <li> Software engineer – Je werk vormt de kern van alles wat we bouwen. 
+      Ontwikkel enorme, complexe softwaresystemen die wereldwijd schaalbaar zijn. </li>
+     <li> Sales engineer - Wees een vertrouwde technisch adviseur voor klanten terwijl je hen begeleidt tijdens hun reis naar de cloud. 
+       Geef vorm aan de toekomst van onze producten door te pleiten voor de eisen van uw klanten. </li>
+     <li> Technical program manager - Vertrouw op je sterke technische ervaring om toezicht te houden op alle 
+       essentiële activiteiten van een bepaald programma, inclusief planning, communicatie en uitvoering. </li>
+     <li> Network engineer - Ontwerp en implementeer netwerksystemen en architectuur voor ondernemingen en providers die essentieel 
+       zijn voor de activiteiten van Google. </li>
+     <li> Software / site reliability engineer - Werk op het snijvlak van software en systeemtechniek om grootschalige systemen schaalbaar, 
+       betrouwbaar en efficiënt te ontwerpen, bouwen en uitvoeren. </li>
+    </ul>
+    </div>
+
+    <div class="idk">.</div>
+    <img src="https://i.dlpng.com/static/png/273998_preview.png" alt="tesla-logo">
+      <div class="fonts">
+        <p>
+          Nu ga ik het hebben over tesla, de meest bekendste van alle elektrische auto’s en ook één van de vele auto’s met veel technologie erin. 
+          Tesla’s missie is om de transitie in duurzame energie in de wereld te versnellen. 
+          Met natuurlijk de elektrische auto’s van tesla maar ook hun innovatie in duurzame energie met zonnepanelen. 
+          Tesla is in 2003 opgericht door ingenieurs die wilden bewijzen dat er geen concessies hoeven te worden gedaan om elektrisch te kunnen rijden. 
+          Maar daar komt natuurlijk veel technologie aan te pas, zoals de accu’s hoe laat je zo’n auto net zoveel kilometers rijden als een benzine auto. 
+          En toen kwamen ze nog met het idee om de auto’s zelfrijdend te maken. En daar komt het stukje programmeren aan de pas, hoe doe je dat? 
+          Met alle computers die nu ook in auto’s zitten zal de innovatie echt snel gaan. 
+          Dit is ook het stukje technologie waar ik me verder in wil verdiepen, en hopelijk later ook een baan in kan vinden. 
+          Dit is daarentegen ook de reden waarom ik ICT ben gaan doen.
+        </p>
+        <p>
+          Als je bij tesla kijkt naar vacatures vind je genoeg, maar wij zoeken natuurlijk naar de IT gerelateerde. 
+          Het volgende heb ik daar gevonden:
+        </p>
+
+        <ul>
+          <li>Software Engineer, Mobile & Web UI</li>
+          <li>IT Asset Management Associate</li>
+          <li>Software Engineer (Energy Service, C#)</li>
+          <li>Software Engineer (Full Stack) - Fin Plat</li>
+          <li>Backend Software Engineer, Battery Engineering</li>
+        </ul>
+
+        <p>
+         <h4> De rol als Software Engineer, mobile & web UI </h4>
+          Wilt je rijke gebruikerservaringen ontwikkelen die onze Megapack-, Powerpack-, Powerwall-, Tesla Solar-, Solar Roof-, 
+          Powerhub- en Autobidder-producten aandrijven? Wilt je een geavanceerde gebruikersinterface voor onze mobiele applicatie maken? 
+          Wilt je bijdragen aan een geavanceerd platform voor het verhandelen van energie op realtime financiële markten, 
+          waarmee de toekomst van het elektriciteitsnet vorm krijgt?
+        </p>
+        <p>
+          <h4> De rol als IT Asset Management Associate </h4>
+          IT Asset Management Associate-positie bij Tesla. 
+          Jouw rol omvat het afhandelen van dagelijkse Asset Lifecycle-transacties, variërend van acquisitie tot pensionering. 
+          Deze taken worden uitgevoerd in overeenstemming met de beleidsrichtlijnen op tijdsbestekken zoals gedefinieerd in de 
+          projectvereisten van het team.
+        </p>
+        <p>
+          <h4> De rol als Software Engineer (Energy Service, C#) </h4>
+          We zijn op zoek naar een zeer gemotiveerde software engineer die gespecialiseerd is in full-stack ontwikkeling. 
+          De kandidaat zou werken aan energieservicesoftware die door technici en serviceadviseurs zal worden gebruikt om de zonne- / 
+          energieactiva van de klant te onderhouden en te repareren, serviceafspraken te maken en te plannen, enz. 
+          We zoeken een full-stack software-engineer om ons team te versterken om tools te bouwen & applicatie voor gebruik door Tesla-servicetechnici, 
+          klantenondersteuningsagenten en backoffice-operators.
+        </p>
+        <p>
+          <h4> De rol als Software Engineer (Full Stack) - Fin Plat </h4>
+          We zijn op zoek naar een zeer gemotiveerde software engineer die gespecialiseerd is in server-side webontwikkeling
+           en die ook comfortabel kan werken met de hele stack (front-end en infrastructuur). 
+           Je komt terecht in een klein, deskundig team dat server-side en front-end software bouwt voor de systemen die 
+           de verkoop en service ondersteunen voor zowel auto- als energieproducten. 
+           Je werkt ook aan ontwikkelaarstools die de productiviteit verbeteren en ontwikkelaars in het hele bedrijf meer mogelijkheden geven.
+        </p>
+        <p>
+          <h4> De rol als Backend Software Engineer, Battery Engineering </h4>
+          Tesla is op zoek naar een geweldige ingenieur om de softwareontwikkeling van geautomatiseerde productiesystemen te 
+          leiden voor de wereldwijde productie van batterij- en energieproducten. De functie is gevestigd in Reno / Tahoe, bij Gigafactory Nevada. 
+          Als lid van ons team geef je vorm aan de richting van de volgende generatie productieoplossingen met een sterke nadruk op systeemorkestratie. 
+          Je moet een oprechte passie hebben voor technische producten die de energie-infrastructuur van de wereld fundamenteel zullen veranderen, 
+          en gedijen in een snelle, ondernemende omgeving.
+        </p>
+
+      </div>
+
+      <div class="idk">.</div>
+      <div class="fonts">
+        <img src="https://thisvsthat.org/wp-content/themes/tvt/images/thisvsthatlogo.png" alt="meme">
+      <p>
+        Het leuke van al deze bedrijven is wel dat ze allemaal wat anders in gedachten hebben om te doen voor de klanten.
+        Yoursurpise wil namelijk een tevreden klant hebben door ze mooi cadeaus te geven en ze goed te begeleiden met een mooie website.
+        Google daarentegen wil de wereld verbeteren door alle informatie tot beschikking te stellen voor iedereen.
+        Waarbij tesla juist een duurzame wereld wil bereiken met hun elektrische auto's en zonnepanelen.
+        Het leuke van al deze bedrijven is wel dat ze allemaal wat met de IT te maken hebben. Zoals hun website, die van Yoursurpise is meer gericht
+        naar de klant. Die van google is meer ingericht voor informatie, en Tesla meer voor de klant, hun auto's en een duurzame wereld.  
+      </p>
+      <p>
+        Ik heb opzich wel een redelijk beeld van de opleiding, en wat ik er uiteindelijk mee wil bereiken. Ik wil niet zozeer een betere wereld
+        creëren maar als dat gebeurt is het prima. Ik wil met de ICT opleiding ergens in de auto branche gaan werken, niet echt de webdevelopment kant
+        maar meer de software engineer richting. Zoals de zelfrijdende auto's van Tesla. Daarom denk ik wel dat deze opleiding bij me past, 
+        uiteindelijk is deze opleiding zeer technologisch ingesteld. Wat ook een pluspunt is omdat technologie in deze maatschappij belangrijk is.
+
+      </p>
+    </div>
+
+    <div class="idk">.</div>
+    <img src="https://www.skybow.com/hubfs/2017-2/Partners/Macaw_logo-1.png" alt="macaw">
+    <div class="fonts">
+      <p>
+        De full service digital partner die van challenges houdt, en dat al voor 25 jaar. 
+        Bedrijven die baanbrekende technische oplossingen en data en design met de juiste mensen combineren, 
+        kunnen succesvol transformeren. En die combinatie is precies waar Macaw al 25 jaar op concentreert, 
+        om klanten en medewerkers succesvol te maken. Ze houden van challenges, dat is ook tegelijkertijd hun moto. 
+        De cultuur binnen Macaw is heel apart, ze doen veel voor hun medewerkers. Het is als het ware één hele grote familie, 
+        die alles met elkaar oplossen. Ze doen ook echt alles samen tot uitjes en feestjes. 
+        Het is dan ook mogelijk om je partner voor het leven daar te vinden. 
+        Op klant gericht niveau zijn ze pas tevreden als de klant succesvol is geworden doormiddel van hun vakmanschap. 
+        De website ziet er leuk uit en zeer toereikend, je kan overall goed bij. 
+      </p>
+      <p>
+        Bij de vacatures van Macaw staan de volgende broepsrollen:
+      </p>
+      <ul>
+        <li>Data scientist</li>
+        <li>Data engineer</li>
+        <li>Sitecore cloud engineer</li>
+        <li>Security cloud engineer</li>
+        <li>Power platform developer</li>
+      </ul>
+      <p>
+        <h4>Data scientist</h4>
+        Als Senior Data Scientist ben je de subject matter expert van het Data Science team en weet je precies hoe je met algoritmes, 
+        big data en machine learning moet omgaan. Jouw kennis en ervaring met Auto Machine Learning, 
+        Python en Natural Language Processing zet je dagelijks in op de projecten die we doen voor hun klanten. 
+        Je ontwikkelt verklarende en voorspellende modellen, 
+        je weet de toegevoegde waarde van data te presenteren en helpt zo om de dienstverlening van hun klanten te verbeteren.  
+      </p>
+      <p>
+        <h4>Data engineer</h4>
+        Als Data Engineer adviseer je hun klanten over de technische mogelijkheden en randvoorwaarden op Data & Analytics gebied. 
+        Samen met het team ontwerp, realiseer en implementeer je D&A toepassingen, 
+        slimme big-data platformen en self service BI oplossingen die klanten nodig hebben. 
+        Je houdt je onder andere bezig met ontwerpen van architecturen, deployment van software en Azure services. 
+        Ook configureer je ETL en Azure Data Factory pipelines en voer je data engineering uit. 
+        Ze  werken met de nieuwste technologie zoals Azure Synapse.
+      </p>
+      <p>
+        <h4>Sitecore cloud engineer</h4>
+        Als Sitecore Cloud Engineer ben je samen met een team van technische Microsoft Specialisten verantwoordelijk 
+        voor de inrichting en het technische beheer van de Sitecore infrastructuur van hun klanten. 
+        Ze verzorgen naast beheer ook ondersteuning bij Sitecore (migratie)projecten. 
+        Het analyseren en oplossen van incidenten, maar ook het beantwoorden van vraagstukken, 
+        die door klanten bij hun worden neergelegd. Dit behoren tot je dagelijkse activiteiten.
+      </p>
+      <p>
+        <h4>Security cloud engineer</h4>
+        Je bent op de hoogte van de typische dreigingen en risico’s. 
+        Door gebruik van security monitoring technieken ben je alert op verschijnselen die kunnen duiden op (nog) 
+        onbekende kwetsbaarheden of ongeautoriseerde toegang. Bij incidenten neem je onmiddellijk risicobeperkende maatregelen. 
+        Daarnaast neem je deel aan initiatieven om beveiligingsmaatregelen te verbeteren en aan te passen aan nieuwe dreigingen en 
+        veranderingen in de IT infrastructuur. Als Security Engineer lever je ook een actieve bijdrage aan security audits en aan 
+        de daaruit voortvloeiende verbeterplannen.
+      </p>
+      <p>
+        <h4>Power platform developer</h4>
+        Ze zetten vol in op het Microsoft Power Platform, oftewel in jouw geval het Common Data Service, 
+        Model Driven Apps, Canvas Apps en Flow. Als Developer ontwerp je zelfstandig en in teamverband technische Power Platform features. 
+        Dit doe je voor hun klanten in Nederland en Duitsland, zoals Heineken en Tata Steel.
+      </p>
+    </div>
+
+    <div class="idk">.</div>
+    <img src="https://www.gratissoftwaresite.nl/files/images/mozillalogo.jpg" alt="Mozilla">
+    <div class="fonts">
+      <p>
+        De missie van mozilla is het bouwen van een beter internet, 
+        net zoals google willen ze ervoor zorgen dat het internet een wereldwijde openbare informatiebron is dat voor iedereen toegankelijk is. 
+        Een internet waar mensen op de eerste plaats staan, waar je het heft in eigen handen hebt en mondig, veilig en onafhankelijk kan zijn. 
+        De cultuur bij mozilla is best grappig, ze hebben namelijk hun eigen benaming voor hun medewerkers, een mozillian. 
+        Op youtube kan je zelf video’s vinden over deze zogenaamde mozillian’s, bij bijvoorbeeld teams meetings. 
+        Je kan dan wel begrijpen dat dit één hele grote familie is. Ze hebben hier wel een eigen leven maar ze dan wel van alles samen. 
+        Mozilla is een wereldwijde gemeenschap van technologen, denkers en bouwers die samenwerken om het internet in beweging en toegankelijk te houden, 
+        zodat mensen over de hele wereld op een geïnformeerde manier aan het internet kunnen bouwen en bijdragen. 
+      </p>
+      <p>
+        De rollen die ze hebben bij mozilla zijn als volgt:
+      </p>
+      <ul>
+        <li>Bugzilla component owners</li>
+        <li>Mozilla reps</li>
+        <li>Mozilla reps council</li>
+        <li>Director of Site Reliability Engineering</li>
+      </ul>
+      <p>
+        <h4>Bugzilla component owners</h4>
+        Eigenaren van Bugzilla-componenten zijn de standaardontvangers van bugs die tegen die component worden ingediend. 
+        Van eigenaren van componenten wordt verwacht dat ze bugrapporten regelmatig bekijken, bugs opnieuw toewijzen aan de juiste eigenaren,
+        ervoor zorgen dat testgevallen bestaan, de voortgang volgen bij het oplossen van belangrijke fixes en anderszins de bugs in de component beheren. 
+        De eigenaar van de Bugzilla-component en de eigenaar van de gerelateerde module kunnen dezelfde persoon zijn, 
+        maar in veel gevallen zullen ze verschillend zijn.
+      </p>
+      <p>
+        <h4>Mozilla reps</h4>
+        Vertegenwoordigers zijn gepassioneerde Mozillianen die functionele en lokale / regionale Mozilla-gemeenschappen mobiliseren en ontwikkelen. 
+        Ze zijn toegewijd om mensen op te leiden en in staat te stellen de missie van Mozilla te ondersteunen 
+        en bij te dragen aan het project op basis van de leiderschapsovereenkomsten van Mozilla. 
+        Ze werken ook samen met andere lokale gemeenschappen om het bereik van Mozilla in het open source-ecosysteem uit te breiden.
+      </p>
+      <p>
+        <h4>Mozilla reps council</h4>
+        De Council is het negenkoppige bestuursorgaan van het programma dat bestaat uit 2 vast aangestelde personeelsleden en 7 
+        gekozen vrijwilligers die een termijn van 12 maanden vervullen. 
+        De Council is er om ervoor te zorgen dat het Mozilla Reps-programma soepel verloopt, 
+        houdt toezicht op het bestuur en de financiën van het programma en dient als adviesorgaan binnen de Mozilla-organisatie.
+        De Reps Council neemt strategische beslissingen over het programma met input van de rest van het leiderschap.
+      </p>
+      <p>
+        <h4>Director of Site Reliability Engineering</h4>
+        Als directeur van SRE ben je verantwoordelijk voor de cloudinfrastructuur achter alle services van Mozilla, 
+        waaronder zowel de zakelijke als de Firefox-backendservices en bezorgsystemen. 
+        Je werkt samen met senior management en de productengineeringteams om de technische strategie en 
+        visie voor de cloudinfrastructuur van Mozilla te bieden. 
+        De functie vereist diepgaande technische expertise in combinatie met het vermogen om leiding te geven in een zeer veelzijdige en 
+        geografisch verspreide omgeving. Creatieve probleemoplossende vaardigheden en het nemen van risico's zullen de sleutel tot succes zijn.
+      </p>
+    </div>
+
+    <div class="idk">.</div>
+    <img src="https://lh3.googleusercontent.com/proxy/dIUks6eudhvnhgZOXkmTvzVt7t80fBdvFXrH_ZURVuOW6yp1ipslcWFq6Uc8aJ8EJfW-W04c_Qt4hsNUZSOu0KV2qIGY2D1CI5Pt5DkPXX1NTx2OCicvXx-or_PvArauyX9lbVU" alt="languages">
+
+    <div class="fonts">
+      <p>
+        Wat al deze vijf bedrijven allemaal gebruiken qua IT middelen komt zowel op hetzelfde neer. Ze maken allemaal gebruik man Java, Python,
+        C++. Maar ze maken natuurlijk ook gebruik van hun eigen software en soort gelijke zoals: ETL, Azure Data Factory deze twee worden voornamelijk
+        gebruikt door Macaw. De volgende paar worden dan weer gebruikt door Tesla development team, TypeScript, React, React Native, Redux, D3 Scales, WebGL, 
+        en de Godot Engine.
+      </p>
+    </div>
+
+    <img src="https://www.microsoft.com/en-us/research/uploads/prod/2019/11/Area_IconHeader_Sys_Prog_11_2019_1920x7204.png" alt="ja">
+
+    </body>
+
+</html>
